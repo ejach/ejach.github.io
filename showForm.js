@@ -1,8 +1,7 @@
-// Disables zooming in
 document.addEventListener('touchmove', function (event) {
   if (event.scale !== 1) { event.preventDefault(); }
 }, false);
-// Used for the hide/show contact form
+
 function showForm() {
   x =  document.getElementById('formElement');
   if (x.style.display === "none") {
