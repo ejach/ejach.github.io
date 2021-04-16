@@ -1,9 +1,14 @@
+@font-face {
+font-family: "Ubuntu-Regular";
+src: url("/fonts/Ubuntu-Regular.ttf");
+src: url("/fonts/ubuntu-regular-webfont.woff") format("woff"),
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 85%;
   margin: auto;
   text-align: center;
-  font-family: Ubuntu, sans-serif;;
+  font-family: Ubuntu-Regular;
 }
 
 .title {
