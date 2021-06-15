@@ -55,6 +55,7 @@ button {
   border: none;
   outline: 0;
   display: inline-block;
+  transition: height 0.4s;
   padding: 8px;
   color: white;
   background-color: #000;
