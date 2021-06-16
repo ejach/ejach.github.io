@@ -7,9 +7,9 @@ src: url("/css/fonts/ubuntu-regular-webfont.woff") format("woff"),
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 85%;
-  transition: height 0.4s;
   margin: auto;
   text-align: center;
+  transition: height 0.3s;
   font-family: Ubuntu-Regular;
 }
 
@@ -21,7 +21,6 @@ src: url("/css/fonts/ubuntu-regular-webfont.woff") format("woff"),
 .contact {
   display: flex;
   justify-content: space-between;
-  transition: height 0.4s;
   margin-left: 25%;
   margin-right: 25%;
 }
@@ -41,10 +40,10 @@ a {
 }
 
 #formElement input, textarea {
+    transition-timing-function: ease;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: height 0.4s;
     width: 95%;
     height: 95%;
     font-family: Ubuntu-Regular;
@@ -55,7 +54,6 @@ button {
   border: none;
   outline: 0;
   display: inline-block;
-  transition: height 0.4s;
   padding: 8px;
   color: white;
   background-color: #000;
