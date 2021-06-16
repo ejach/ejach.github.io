@@ -1,7 +1,9 @@
 $(document).ready(function() {
-  $('.card').css('display', 'none');
-  $('.card').fadeIn(1000);
+  $('input').css('display', 'none');
+  $('textarea').css('display', 'none');
     $("#showForm").click(function() {
-      $("#formElement").slideToggle(200);
+      $("#formElement").slideToggle(300);
+      $('input').fadeToggle(600);
+      $('textarea').fadeToggle(600);
     });
   });
