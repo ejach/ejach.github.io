@@ -39,8 +39,6 @@ a {
 }
 
 #formElement input, textarea {
-    transition: height 0.3s;
-    transition-timing-function: ease;
     display: block;
     margin-left: auto;
     margin-right: auto;
