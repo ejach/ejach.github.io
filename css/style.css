@@ -19,6 +19,7 @@ src: url("/css/fonts/ubuntu-regular-webfont.woff") format("woff"),
 }
 
 .contact {
+  transition-timing-function: ease;
   display: flex;
   justify-content: space-between;
   margin-left: 25%;
