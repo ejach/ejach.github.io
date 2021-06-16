@@ -1,4 +1,4 @@
-// Function to show/display the contact form
+// Function to show/hide the contact form
 $(document).ready(function() {
   $("#showForm").click(function() {
     $("#formElement").slideToggle(200);
