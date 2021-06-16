@@ -38,6 +38,10 @@ a {
   justify-content: space-between;
 }
 
+#formElement {
+  display: none;
+}
+
 #formElement input, textarea {
     margin-left: auto;
     margin-right: auto;
