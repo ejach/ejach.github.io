@@ -39,7 +39,6 @@ a {
 }
 
 #formElement input, textarea {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
