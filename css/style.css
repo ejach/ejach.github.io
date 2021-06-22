@@ -75,3 +75,43 @@ button {
     justify-content: space-between;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #2d333b;
+    }
+
+    body {
+      background-color: #22272e;
+    }
+
+    button {
+      background-color: #373e47;
+      color: #9eaab7;
+    }
+
+    input, textarea {
+      background-color: #9eaab7;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: black;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: black;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: black;
+    }
+
+    p, h1 {
+      color: #9eaab7;
+    }
+
+    .title {
+      color: #575d64;
+    }
+}
