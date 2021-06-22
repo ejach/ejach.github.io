@@ -76,7 +76,7 @@ button {
   }
 }
 
-@media all and (prefers-color-scheme: dark) {
+@media all and (prefers-color-scheme: dark) and (orientation: landscape) {
     .card {
         background-color: #2d333b;
     }
