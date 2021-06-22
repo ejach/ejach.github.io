@@ -1,4 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="192px" height="192px"><svg version="1.1" id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="192px" height="192px" viewBox="0 0 192 192" enable-background="new 0 0 192 192" xml:space="preserve">  <image id="SvgjsImage1000" width="192" height="192" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="192px" height="192px">
+<svg version="1.1" id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="192px" height="192px" viewBox="0 0 192 192" enable-background="new 0 0 192 192" xml:space="preserve">
+  <foreignObject>
+  <style>
+          image {
+              fill: #000;
+          }
+          @media (prefers-color-scheme: dark) {
+              image { 
+                  fill: #fff;
+          }
+          }
+  </style>
+  </foreignObject>
+<image id="SvgjsImage1000" width="192" height="192" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAA4
 FklEQVR42u29aXBc13Xv+1/7jD03gAYaIAACIDjTkkiRomlKsmjJseLkJrZvAtpVdq7jxJGcevat
 DEr86j47iiLnVWyrUqk4eb5k4kclkV/ZZO5NJfGNh+tYkmPJsiaSkjgTBIi5MTbQ0xn3eh8akGmK
