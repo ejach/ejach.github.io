@@ -8,7 +8,7 @@
         }
         @media (prefers-color-scheme: dark) {
             path {
-                fill: #9eaab7 !important;
+                filter: invert(71%) sepia(3%) saturate(1271%) hue-rotate(171deg) brightness(96%) contrast(88%);
         }
         }
 </style>
