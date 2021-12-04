@@ -68,7 +68,7 @@ button {
 
 @media all and (orientation: landscape) {
   .card {
-    max-width: 55%;
+    max-width: 35%;
   }
 
   .contact {
