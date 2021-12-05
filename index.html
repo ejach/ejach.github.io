@@ -13,6 +13,7 @@
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/showForm.js"></script>
+  <script type="text/javascript" src="js/submitForm.js"></script>
   <title>Evan Jachimiak</title>
 </head>
 <body>
@@ -39,12 +40,13 @@
     </div>
   </div>
   <p><button id="showForm">Contact</button></p>
-  <form id="formElement" action="https://formspree.io/f/xwkakdyy" method="POST">
+  <form id="formElement">
     <input type="text" name="name" placeholder="Name" required>
     <input type="text" name="company" placeholder="Company">
     <input type="email" name="_replyto" placeholder="Email" required>
     <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit">Send</button>
+    <p id="my-form-status"></p>
+    <button id="submit" type="submit">Send</button>
   </form>
 </div>
 </body>
