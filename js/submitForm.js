@@ -11,10 +11,10 @@ window.onload = function() {
         'Accept': 'application/json'
       }
     }).then(response => {
-      status.innerHTML = "Thanks for your submission!";
+      status.innerHTML = "Thanks for reaching out! I will respond as soon as I can.";
       form.reset()
     }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form"
+      status.innerHTML = "Oops! There was a problem submitting your form, please try again."
     });
   }
   form.addEventListener("submit", handleSubmit)
