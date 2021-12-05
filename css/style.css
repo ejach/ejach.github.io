@@ -3,18 +3,17 @@ font-family: "Ubuntu-Regular";
 src: url("/css/fonts/Ubuntu-Regular.ttf");
 src: url("/css/fonts/ubuntu-regular-webfont.woff") format("woff"),
 }
-
-#branding {
-  font-size: 15px;
+.g-recaptcha {
+  margin-left: 20%;
 }
 
-#branding > a {
-  text-decoration: underline;
-  font-size: 15px;
-}
-
-.grecaptcha-badge {
-  visibility: hidden;
+/* CSS */
+#g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
 }
 
 .card {

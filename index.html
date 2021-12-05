@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="user-scalable=no" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
@@ -39,18 +39,15 @@
       </a>
     </div>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <p><button id="showForm">Contact</button></p>
-  <form id="formElement">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <form id="formElement" action="https://formspree.io/f/xwkakdyy" method="POST">
     <input type="text" name="name" placeholder="Name" required>
     <input type="text" name="company" placeholder="Company">
     <input type="email" name="_replyto" placeholder="Email" required>
     <textarea name="message" placeholder="Message" required></textarea>
-    <p id="my-form-status"></p>
-    <p id="branding">This site is protected by reCAPTCHA and the Google
-    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
-    <button class="g-recaptcha" data-sitekey="6LddtX0dAAAAAIF3tkmHEOdgFjvMmZ5XpECZkOKf" id="submit" type="submit">Send</button>
+    <div class="g-recaptcha" data-sitekey="6LeQ0H0dAAAAANuUFneT3Wk-b1IP37WfmZuyT4M0"></div>
+    <button type="submit">Send</button>
   </form>
 </div>
 </body>
