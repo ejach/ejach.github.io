@@ -4,6 +4,19 @@ src: url("/css/fonts/Ubuntu-Regular.ttf");
 src: url("/css/fonts/ubuntu-regular-webfont.woff") format("woff"),
 }
 
+#branding {
+  font-size: 15px;
+}
+
+#branding > a {
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 85%;
