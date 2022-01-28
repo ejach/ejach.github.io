@@ -6,30 +6,20 @@ I hereby claim:
 
   * I am an admin of https://ejach.com
   * I am ejach (https://keybase.io/ejach) on keybase.
-  * I have a public key with fingerprint 6A45 3055 2A0D AAAA B454  5746 AE53 EDB7 38E3 CC77
+  * I have a public key with fingerprint 7591 B050 8D0C 33FA EEB0  7F03 C7B7 C8CE 7DCB C785
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "0101c45ec0587fe063a009e1bb6da7291faf79006a247cc589a9224c451b02757d370a",
-      "fingerprint": "6a4530552a0daaaab4545746ae53edb738e3cc77",
+      "eldest_kid": "01015acbc720862188b43c96884f9c4f3be10bad9468b26704136c874d0e9b5e74810a",
+      "fingerprint": "7591b0508d0c33faeeb07f03c7b7c8ce7dcbc785",
       "host": "keybase.io",
-      "key_id": "ae53edb738e3cc77",
-      "kid": "0101c45ec0587fe063a009e1bb6da7291faf79006a247cc589a9224c451b02757d370a",
+      "key_id": "c7b7c8ce7dcbc785",
+      "kid": "01015acbc720862188b43c96884f9c4f3be10bad9468b26704136c874d0e9b5e74810a",
       "uid": "7e4abd4262bbbbd7a269c82194f83e19",
       "username": "ejach"
-    },
-    "merkle_root": {
-      "ctime": 1624470099,
-      "hash_meta": "f8c5f6f8637b54c3b1094adee4b685ad89bc9e175d04b49feefd91aca6b002aa",
-      "seqno": 20243845
-    },
-    "revoke": {
-      "sig_ids": [
-        "3af31d3ece09f5e4b8b6d964b297b0bc6d48ce5a4d4341f6b274d2daae94c7b80f"
-      ]
     },
     "service": {
       "hostname": "ejach.com",
@@ -38,10 +28,10 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1624470113,
+  "ctime": 1643386611,
   "expire_in": 157680000,
-  "prev": "df1af96f9682a21e3c954728efab80b39f53e835d01b90abeefe4d51b3db5b21",
-  "seqno": 6,
+  "prev": "fe7803220c9b548fb3103f2d9aa2120cf01c231c469ddd3c9915f793608d7a2e",
+  "seqno": 21,
   "tag": "signature"
 }
 
@@ -51,26 +41,23 @@ which yields the signature:
 Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMKzAnicrVNraB1FFN6kVpIbH31dqVIVN0FLCXV2Hjs7V/GHiFCNUkoEQ9TNPM7m
-bpPcvdndpIYYX+AjSgqSCkXrH0uJmlIoVND0h01TFakP8IFV8EXVVHymVsW+cDYo
-KvjTw8KwM9/5zne+M3Po/CVOqeH4Pd0ds6VnehoOH6wPOT3vpXLUVYkZcSujbh8s
-LtBvIMvDvti4FRd5yNOUgUYs4BEgn0iEBHhK+UZyLLxIRlwg5EtMudYsEFJgTG2K
-pxDmjBvCkXTb3Siu9UJaT+Nabml9SRlBjGGJjLShKKOMU18CI2AUJwEQrTm3idUk
-KzKsOCUzWB8nds/+hIvy/gP/P+seWqTjQKUyFPtY2TBcYl/oAHuCRgEBTxTADNKa
-HACLhs1SV92xdncA0r5+CNMkyQtndR4X556PKeVWjrDdyawaDkAubVoUaBb5UeAT
-rhjVRHlIUGkAqPIDJk0glLYtcGYQVVREAJERntTSVwhhWajNYLCWuBWMMCUBZVZC
-CsNJHxTVs7jXmpa5lW6XyIh4hoAGJCJm+QNri/CpwoIrpLRvaKCBSWoooV7kK8yp
-wXZSIKjmKkCRe+dYUS0djvUieTGlf3a/XicDVk89TfJEJ/12u5rn9axSuJKP1Avc
-FlDhnwyhimvGXhCbMQxpFic165JF/tswzyPtLtxdj1MI4wLBuB8gG0UdGLaUJvJk
-JHz7BVhiz94JwSjHAUTSilbENksgINZATwkklXUQqLEjJ0Yxhb2/HfStTNlrKa1r
-NZkPpeCOHTxwxzlOQ8k5d2lj8XCcUvOyv57Tz2ebnCfGv7vpvt+n0cxvfth99MLr
-L/++66rbWl5Z2HVy93zno/udKzpfNK8/1bR0+eS6bXvCqeq3W0/9ulsu7Ltx+ry5
-tgtWnH3rMnrDV2TvzJNrHlg78ZAx/Y/Vjh6e+3xi687nP3q3bWO++ZqWcnnTgyV9
-fPWnUx0fHjgyuuSX+OqnR7ZfN7mMhS2NFz/+TfnL5W+QW98hK2YW5suHnl17Zs1F
-rZOPVN/fNXT74JXPze7ds4U0z552uq6dd440N7/59Y7XSOvH4ye2jX/ReldP5yU7
-Ht40eP86aFr109zGWXLss9OrmpIX2oLGWzbsO7P/xLGpH2C6ZyJYfenbHS/dfPKD
-V1/+5F70Y2lleWXXqQ1TZvsfIN9+xQ==
-=AJgY
+yMIiAnicrVJbSBVBGD5mmgqG2AUqJdwTVHA4zOzu2Z09VlZPkZbhQ0iGx9nZWd3U
+3ePuesxUSqmXMqOLUEhioF0oLIoUfOhimVJZJEF0eemidiOiLLoYNSsFPfTY/zLM
+N9/3/Zf5r6fG+1LiSgYyS0YL8/Ljbl09UO3DE3M/1nGqpdVy4TqunE4dtEKjjhsp
+NzQuzAEIYAgTlcg8QBIPEVJFgSgSQqKuEFEXVAqBijVFlJDKSzIQoSARJIsaoIoa
+orKIIMBcgNMNs5TaUdswXWYrhxSoghBAGiCCoGNKVSDrQCCyKhNEqKx5KVGICcss
+x1Ow4lTs0KBhMYxdIlPl/YP/n+uunrKTqYhVTeQlXmWhyZiXFIJ4qIg6EihUPKJD
+bRNXUsamWzAp4xoCHINiBqHeVL02/n4OEquSqaK25VrEqmBwmetGnbAnc2ujHq+G
+qpHfDhHVMDU2QaaIUdsxLJMLQ8YkruFZQkkUBCRJEAY4ujVq2DRieIyQLCHAwstD
+Y8xSpzICAs8DwpoUka4KEAg6rykY85ChOoCEFyARJUXTNDYwBYZ0WREk9lOsacp5
+PVWZFhfmWSoXlzJPxyg1sVttU66h/8rm6b64FF9iwjRvtXwpyWl/Fm7WwyRfx8ma
+7h2Xs462Hu7YfwR/Co42Pm2zllzrS/Wjnrbsdf6Ryu/359CI1dx5oe7z1+Efa3Ja
+il8/Stp348W7930Tjadv/+Qfj43/PDSDNs+P7C7qJS22mP4yr6e1NDfm5zoyB2Ym
+nsMHl3UnX9owWLswfuztRcc4P3R7Z8ZETkbXh9WnAg3pgwdXkSacOt6/PXf12PG7
+/pG01MX5Q4kbJ5e3O8F5JwraM2Y/aDy7SrvVlJk080tufc/z5qXZHwsKF62/6X47
+Vjb8yk5/P81ZYWVt0nwVbf3ZWQULCub7cyv52OOEZ5Mr9965V5SzDQe6RkZ37Tlj
+tlmP3tR3Fptr8/Mmq570/gIZ4z6p
+=dmnW
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
