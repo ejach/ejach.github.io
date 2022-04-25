@@ -3,7 +3,6 @@ font-family: "Ubuntu-Regular";
 src: url("/css/fonts/Ubuntu-Regular.ttf");
 src: url("/css/fonts/ubuntu-regular-webfont.woff") format("woff"),
 }
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 85%;
@@ -66,7 +65,16 @@ button {
   font-size: 25px;
 }
 
+@media all and (orientation: portrait) {
+  #socials {
+  margin-left: -2em;
+  padding-: 5px;
+}
+
+}
+
 @media all and (orientation: landscape) {
+  
   .card {
     max-width: 35%;
   }
