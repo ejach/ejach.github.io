@@ -1,52 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/icons/site.webmanifest">
-  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <script type="text/javascript" src="js/submitForm.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/showForm.js"></script>
-  <title>Evan Jachimiak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Jachimiak | Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div class="card">
-    <img class="pfp" src="assets/profilepic.jpg" alt="Evan" style="width:100%" draggable="false">
-    <h1>Evan Jachimiak</h1>
-    <p class="title" style="font-size: 2em;">Full Stack Software Engineer</p>
-    <div id="socials">
-      <div class="contact">
-        <a href="https://www.linkedin.com/in/evan-jach/">
-          <img alt="Evan's LinkdeIn" width="55px" src="https://ejach.com/assets/icons/linkedin.svg" />
-        </a>
-        <a href="https://ejach.com/assets/Evan_Jachimiak_2022-2023.pdf">
-          <img aligalt="Evan's Resume" width="55px" src="https://ejach.com/assets/icons/resume.svg" />
-        </a>
-        <a href="https://github.com/ejach">
-          <img ali alt="Evan's Github" width="55px" src="https://ejach.com/assets/icons/github.svg" />
-        </a>
-        <a href="https://threema.id/PNDCPW6A">
-          <img aligalt="Evan's Threema" width="55px" src="https://ejach.com/assets/icons/threema.svg" />
-        </a>
-      </a>
-    </div>
-  </div>
-  <p><button id="showForm">Contact</button></p>
-  <form id="formElement" action="https://formspree.io/f/xwkakdyy" method="POST">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="text" name="company" placeholder="Company">
-    <input type="email" name="_replyto" placeholder="Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
-    <p id="my-form-status"></p>
-    <button type="submit">Send</button>
-  </form>
-</div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Evan Jachimiak</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <img id="pfp" src="assets/me.jpeg">
+            <h2>Hi, I'm Evan <span id="lastNameSpan"><span id="lastName">Jachimiak</span><span id="pronunciation">(Yah-hee-myahk)</span></span></h2>
+            <p>I design and build things for the web.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m a full-stack software engineer based in Indiana focused on building clean, reliable, and user-centered applications. I enjoy turning real-world problems into simple, effective tools that improve everyday life.</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2>My Work</h2>
+            <p>A curated collection of my personal projects and open-source contributions. Explore the repositories to see what I have built and contributed.</p>
+            <div id="pinned-repos" class="work-grid"></div>
+            <!-- Dynamically Populate from JQuery -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out if you'd like to collaborate or just say hello.</p>
+            <div class="social-links">
+                <a href="https://github.com/ejach" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/evan-jach" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" id="email-me"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div id="contact-form">
+          <form id="my-form" action="https://formspree.io/f/xwkakdyy" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="company" placeholder="Company">
+            <input type="email" name="_replyto" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <p id="my-form-status"></p>
+            <button class="btn-submit" type="submit">Send</button>
+          </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Evan Jachimiak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
