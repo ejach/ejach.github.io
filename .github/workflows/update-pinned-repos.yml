@@ -1,3 +1,4 @@
+# File: .github/workflows/update-pinned-repos.yml
 name: Update Pinned Repositories
 
 on:
@@ -8,6 +9,8 @@ on:
 jobs:
   update-repos:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -15,7 +18,6 @@ jobs:
       - name: Fetch pinned repositories
         id: fetch-repos
         run: |
-          # Fetch pinned repositories using GitHub GraphQL API
           RESPONSE=$(curl -s -X POST \
             -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
             -H "Content-Type: application/json" \
@@ -25,31 +27,34 @@ jobs:
           echo "API Response: $RESPONSE"  # Debug output
 
           # Check if the response contains errors
-          ERRORS=$(echo $RESPONSE | jq '.errors')
+          ERRORS=$(echo "$RESPONSE" | jq '.errors')
           if [ "$ERRORS" != "null" ]; then
             echo "API Errors: $ERRORS"
             exit 1
           fi
 
-          # Extract pinned repositories from the response
-          PINNED_REPOS=$(echo $RESPONSE | jq '.data.user.pinnedItems.nodes')
-          echo "PINNED_REPOS=$PINNED_REPOS" >> $GITHUB_ENV
-          echo "Fetched Repos: $PINNED_REPOS"  # Debug output
+          # Extract pinned repositories from the response and save to a file
+          echo "$RESPONSE" | jq '.data.user.pinnedItems.nodes' > pinned-repos-temp.json
+          cat pinned-repos-temp.json  # Debug output
+
+          # Set the content as an output variable
+          PINNED_REPOS_CONTENT=$(cat pinned-repos-temp.json | jq -c '.')
+          echo "PINNED_REPOS_CONTENT=$PINNED_REPOS_CONTENT" >> $GITHUB_ENV
 
       - name: Check for changes
         id: check-changes
         run: |
           # Check if pinned-repos.json exists
           if [ -f "pinned-repos.json" ]; then
-            EXISTING_REPOS=$(cat pinned-repos.json | jq -c .)
-            echo "Existing Repos: $EXISTING_REPOS"  # Debug output
+            EXISTING_REPOS_CONTENT=$(cat pinned-repos.json | jq -c '.')
+            echo "Existing Repos Content: $EXISTING_REPOS_CONTENT"  # Debug output
           else
-            EXISTING_REPOS="[]"
+            EXISTING_REPOS_CONTENT="[]"
             echo "No existing repos file found."  # Debug output
           fi
 
           # Compare existing repos with fetched repos
-          if [ "$EXISTING_REPOS" != "$PINNED_REPOS" ]; then
+          if [ "$EXISTING_REPOS_CONTENT" != "${{ env.PINNED_REPOS_CONTENT }}" ]; then
             echo "Changes detected."
             echo "CHANGED=true" >> $GITHUB_ENV
           else
@@ -60,7 +65,7 @@ jobs:
       - name: Update pinned-repos.json
         if: env.CHANGED == 'true'
         run: |
-          echo "${{ env.PINNED_REPOS }}" | jq '.' > pinned-repos.json
+          mv pinned-repos-temp.json pinned-repos.json
           echo "Updated pinned-repos.json"  # Debug output
 
       - name: Commit and push changes
