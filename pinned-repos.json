@@ -1,1 +1,80 @@
-null
+[
+  {
+    "name": "notion-budgeter",
+    "description": "Keeps a given Notion database up to date with expenses using SimpleFin.",
+    "url": "https://github.com/ejach/notion-budgeter",
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python",
+          "color": "#3572A5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "tautulliToLetterboxd",
+    "description": "Export watched content from Tautulli to the Letterboxd CSV Import Format",
+    "url": "https://github.com/ejach/tautulliToLetterboxd",
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python",
+          "color": "#3572A5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "hpb-wishlist-checker",
+    "description": "Finds which Hardcover wishlist books are in stock at nearby Half Price Books stores.",
+    "url": "https://github.com/ejach/hpb-wishlist-checker",
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python",
+          "color": "#3572A5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "docker-swag",
+    "description": "Nginx webserver and reverse proxy with php support and a built-in Certbot (Let's Encrypt) client. It also contains fail2ban for intrusion prevention.",
+    "url": "https://github.com/linuxserver/docker-swag",
+    "languages": {
+      "nodes": [
+        {
+          "name": "Dockerfile",
+          "color": "#384d54"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sonarr",
+    "description": "Smart PVR for newsgroup and bittorrent users.",
+    "url": "https://github.com/Sonarr/Sonarr",
+    "languages": {
+      "nodes": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Radarr",
+    "description": "Movie organizer/manager for usenet and torrent users.",
+    "url": "https://github.com/Radarr/Radarr",
+    "languages": {
+      "nodes": [
+        {
+          "name": "Shell",
+          "color": "#89e051"
+        }
+      ]
+    }
+  }
+]
