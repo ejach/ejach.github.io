@@ -1,0 +1,55 @@
+name: Update Pinned Repositories
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  update-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch pinned repositories
+        id: fetch-repos
+        run: |
+          RESPONSE=$(curl -s -X POST -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" -H "Content-Type: application/json" \
+          --data '{"query": "query { user(login: \"ejach\") { pinnedItems(first: 6, types: [REPOSITORY]) { nodes { ... on Repository { name description url languages(first: 1) { nodes { name color } } } } } } }"}' \
+          https://api.github.com/graphql)
+
+          # Extract pinned repositories from the response
+          PINNED_REPOS=$(echo $RESPONSE | jq '.data.user.pinnedItems.nodes')
+          echo "PINNED_REPOS=$PINNED_REPOS" >> $GITHUB_ENV
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          # Check if pinned-repos.json exists
+          if [ -f "pinned-repos.json" ]; then
+            EXISTING_REPOS=$(cat pinned-repos.json | jq -c .)
+          else
+            EXISTING_REPOS="[]"
+          fi
+
+          # Compare existing repos with fetched repos
+          if [ "$EXISTING_REPOS" != "$PINNED_REPOS" ]; then
+            echo "CHANGED=true" >> $GITHUB_ENV
+          else
+            echo "CHANGED=false" >> $GITHUB_ENV
+          fi
+
+      - name: Update pinned-repos.json
+        if: env.CHANGED == 'true'
+        run: |
+          echo "${{ env.PINNED_REPOS }}" | jq '.' > pinned-repos.json
+
+      - name: Commit and push changes
+        if: env.CHANGED == 'true'
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add pinned-repos.json
+          git commit -m "Update pinned repositories"
+          git push
