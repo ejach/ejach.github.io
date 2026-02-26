@@ -70,4 +70,20 @@ $(() => {
             $('#pinned-repos').html('<p>Failed to load repositories. Please try again later.</p>');
         }
     });
+    // Change the adjective in the hero section
+    const adjectives = ['fast', 'safe', 'weird', 'clean', 'niche', 'fun', 'neat'];
+    let index = 0;
+    const $adjective = $('.adjective');
+
+    $adjective.text(adjectives[index]);
+
+    setInterval(function() {
+        index = (index + 1) % adjectives.length;
+        $adjective.css('transform', 'translateY(-24px)');
+        setTimeout(function() {
+            $adjective.text(adjectives[index]).css('transform', 'translateY(24px)');
+            void $adjective[0].offsetWidth;
+            $adjective.css('transform', 'translateY(0)');
+        }, 300);
+    }, 2500);
 });
