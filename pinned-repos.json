@@ -52,19 +52,6 @@
     }
   },
   {
-    "name": "Sonarr",
-    "description": "Smart PVR for newsgroup and bittorrent users.",
-    "url": "https://github.com/Sonarr/Sonarr",
-    "languages": {
-      "nodes": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a"
-        }
-      ]
-    }
-  },
-  {
     "name": "Radarr",
     "description": "Movie organizer/manager for usenet and torrent users.",
     "url": "https://github.com/Radarr/Radarr",
@@ -73,6 +60,19 @@
         {
           "name": "Shell",
           "color": "#89e051"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sonarr",
+    "description": "Smart PVR for newsgroup and bittorrent users.",
+    "url": "https://github.com/Sonarr/Sonarr",
+    "languages": {
+      "nodes": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
         }
       ]
     }
