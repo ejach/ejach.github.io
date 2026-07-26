@@ -39,14 +39,14 @@
     }
   },
   {
-    "name": "docker-swag",
-    "description": "Nginx webserver and reverse proxy with php support and a built-in Certbot (Let's Encrypt) client. It also contains fail2ban for intrusion prevention.",
-    "url": "https://github.com/linuxserver/docker-swag",
+    "name": "plezy",
+    "description": "Modern cross-platform Plex & Jellyfin client built with Flutter",
+    "url": "https://github.com/edde746/plezy",
     "languages": {
       "nodes": [
         {
-          "name": "Dockerfile",
-          "color": "#384d54"
+          "name": "Kotlin",
+          "color": "#A97BFF"
         }
       ]
     }
