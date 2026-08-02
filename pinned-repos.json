@@ -1,8 +1,8 @@
 [
   {
-    "name": "notion-budgeter",
-    "description": "Keeps a given Notion database up to date with expenses using SimpleFin.",
-    "url": "https://github.com/ejach/notion-budgeter",
+    "name": "tautulliToLetterboxd",
+    "description": "Export watched content from Tautulli to the Letterboxd CSV Import Format",
+    "url": "https://github.com/ejach/tautulliToLetterboxd",
     "languages": {
       "nodes": [
         {
@@ -13,9 +13,9 @@
     }
   },
   {
-    "name": "tautulliToLetterboxd",
-    "description": "Export watched content from Tautulli to the Letterboxd CSV Import Format",
-    "url": "https://github.com/ejach/tautulliToLetterboxd",
+    "name": "notion-budgeter",
+    "description": "Keeps a given Notion database up to date with expenses using SimpleFin.",
+    "url": "https://github.com/ejach/notion-budgeter",
     "languages": {
       "nodes": [
         {
